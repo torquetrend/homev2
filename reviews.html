@@ -1,1 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Reviews - TorqueTrend</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html" aria-label="TorqueTrend Home">
+                    <h1>TorqueTrend</h1>
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu" aria-label="Primary Navigation">
+                <ul>
+                    <li><a href="index.html#home" aria-label="Home">Home</a></li>
+                    <li><a href="index.html#latest-news" aria-label="Latest News">Latest News</a></li>
+                    <li><a href="reviews.html" aria-label="Reviews" class="active">Reviews</a></li>
+                    <li><a href="index.html#rankings" aria-label="Rankings">Rankings</a></li>
+                    <li><a href="chatbot.html" aria-label="Car Chatbot">Chatbot</a></li>
+                    <li><a href="contact.html" aria-label="Contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Bar for Desktop -->
+            <div class="search-bar">
+                <form role="search" aria-label="Site Search">
+                    <input type="search" id="search-bar" name="search" placeholder="Search articles..." aria-label="Search">
+                    <button type="submit" aria-label="Search Button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <button class="hamburger-menu" id="hamburger-menu" aria-label="Open Menu" aria-expanded="false" aria-controls="sidebar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sidebar for Mobile -->
+    <aside id="sidebar" class="sidebar" aria-hidden="true">
+        <div class="sidebar-nav">
+            <ul>
+                <li><a href="index.html#home" aria-label="Home">Home</a></li>
+                <li><a href="index.html#latest-news" aria-label="Latest News">Latest News</a></li>
+                <li><a href="reviews.html" aria-label="Reviews" class="active">Reviews</a></li>
+                <li><a href="index.html#rankings" aria-label="Rankings">Rankings</a></li>
+                <li><a href="index.html#recommendations" aria-label="Recommendations">Recommendations</a></li>
+                <li><a href="chatbot.html" aria-label="Car Chatbot">Chatbot</a></li>
+                <li><a href="index.html#newsletter" aria-label="Newsletter">Newsletter</a></li>
+                <li><a href="contact.html" aria-label="Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-search">
+            <form role="search" aria-label="Mobile Search">
+                <input type="search" id="sidebar-search-bar" name="search" placeholder="Search articles..." aria-label="Search">
+                <button type="submit" aria-label="Search Button"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </aside>
+
+    <!-- Overlay for Sidebar -->
+    <div id="sidebar-overlay" tabindex="-1" aria-hidden="true"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Featured Reviews Section -->
+        <section id="reviews" class="featured-reviews-section" aria-labelledby="reviews-heading">
+            <div class="container">
+                <h2 id="reviews-heading">Featured Reviews</h2>
+                <div class="reviews-slider">
+                    <article class="review-card">
+                        <img src="assets/images/model-s.jpg" alt="Tesla Model S Review" loading="lazy">
+                        <div class="review-content">
+                            <h3>Tesla Model S Review</h3>
+                            <p>An in-depth look at Tesla's flagship sedan, exploring its performance, technology, and design.</p>
+                            <a href="reviews/tesla-model-s-review.html" class="btn-secondary" aria-label="Read Tesla Model S Review">Read Review <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="review-card">
+                        <img src="assets/images/M5.jpg" alt="BMW M5 Review" loading="lazy">
+                        <div class="review-content">
+                            <h3>BMW M5 Review</h3>
+                            <p>Examining the blend of luxury and performance in BMW's iconic sedan.</p>
+                            <a href="reviews/bmw-m5-review.html" class="btn-secondary" aria-label="Read BMW M5 Review">Read Review <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="review-card">
+                        <img src="assets/images/eg80.jpg" alt="Genesis Electrified G80 Review" loading="lazy">
+                        <div class="review-content">
+                            <h3>Genesis Electrified G80 Review</h3>
+                            <p>Assessing the brilliance and performance of Genesis' flagship electric sedan.</p>
+                            <a href="reviews/genesis-electrified-g80-review.html" class="btn-secondary" aria-label="Read Genesis Electrified G80 Review">Read Review <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <!-- Add more review cards as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer" aria-labelledby="footer-heading">
+        <div class="container">
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <p>TorqueTrend is your trusted source for automotive news, reviews, and rankings. Stay updated with the latest trends and insights in the automotive industry.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html#home" aria-label="Go to Home">Home</a></li>
+                    <li><a href="index.html#latest-news" aria-label="Go to Latest News">Latest News</a></li>
+                    <li><a href="reviews.html" aria-label="Go to Reviews" class="active">Reviews</a></li>
+                    <li><a href="index.html#rankings" aria-label="Go to Rankings">Rankings</a></li>
+                    <li><a href="index.html#recommendations" aria-label="Go to Recommendations">Recommendations</a></li>
+                    <li><a href="chatbot.html" aria-label="Go to Car Chatbot">Chatbot</a></li>
+                    <li><a href="index.html#newsletter" aria-label="Go to Newsletter">Newsletter</a></li>
+                    <li><a href="contact.html" aria-label="Go to Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TorqueTrend, LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('Service Worker registered'))
+                    .catch(err => console.error('Service Worker registration failed:', err));
+            });
+        }
+    </script>
+</body>
+
+</html>
