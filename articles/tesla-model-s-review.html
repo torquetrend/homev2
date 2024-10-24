@@ -1,1 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Model S Review - TorqueTrend</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
+    <script src="../scripts.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html" aria-label="TorqueTrend Home">
+                    <h1>TorqueTrend</h1>
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu" aria-label="Primary Navigation">
+                <ul>
+                    <li><a href="../index.html#home" aria-label="Home">Home</a></li>
+                    <li><a href="../index.html#latest-news" aria-label="Latest News">Latest News</a></li>
+                    <li><a href="../reviews.html" aria-label="Reviews" class="active">Reviews</a></li>
+                    <li><a href="../index.html#rankings" aria-label="Rankings">Rankings</a></li>
+                    <li><a href="../chatbot.html" aria-label="Car Chatbot">Chatbot</a></li>
+                    <li><a href="../contact.html" aria-label="Contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Bar for Desktop -->
+            <div class="search-bar">
+                <form role="search" aria-label="Site Search">
+                    <input type="search" id="search-bar" name="search" placeholder="Search articles..." aria-label="Search">
+                    <button type="submit" aria-label="Search Button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <button class="hamburger-menu" id="hamburger-menu" aria-label="Open Menu" aria-expanded="false" aria-controls="sidebar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sidebar for Mobile -->
+    <aside id="sidebar" class="sidebar" aria-hidden="true">
+        <div class="sidebar-nav">
+            <ul>
+                <li><a href="../index.html#home" aria-label="Home">Home</a></li>
+                <li><a href="../index.html#latest-news" aria-label="Latest News">Latest News</a></li>
+                <li><a href="../reviews.html" aria-label="Reviews" class="active">Reviews</a></li>
+                <li><a href="../index.html#rankings" aria-label="Rankings">Rankings</a></li>
+                <li><a href="../index.html#recommendations" aria-label="Recommendations">Recommendations</a></li>
+                <li><a href="../chatbot.html" aria-label="Car Chatbot">Chatbot</a></li>
+                <li><a href="../index.html#newsletter" aria-label="Newsletter">Newsletter</a></li>
+                <li><a href="../contact.html" aria-label="Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-search">
+            <form role="search" aria-label="Mobile Search">
+                <input type="search" id="sidebar-search-bar" name="search" placeholder="Search articles..." aria-label="Search">
+                <button type="submit" aria-label="Search Button"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </aside>
+
+    <!-- Overlay for Sidebar -->
+    <div id="sidebar-overlay" tabindex="-1" aria-hidden="true"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Review Article Section -->
+        <article class="article-page">
+            <div class="container">
+                <header class="article-header">
+                    <h1>Tesla Model S Review</h1>
+                    <p class="article-meta">By Sarah Thompson | Published on October 31, 2024</p>
+                </header>
+                <div class="article-content">
+                    <img src="../assets/images/model-s.jpg" alt="Tesla Model S">
+
+                    <p>The Tesla Model S has redefined the automotive industry since its introduction, setting new standards for electric vehicles in terms of performance, technology, and design. The latest Model S continues this trend, offering a combination of speed, range, and innovation that keeps it at the forefront of the EV market.</p>
+
+                    <h2>Design and Exterior</h2>
+                    <p>The Model S features a sleek and minimalist design that balances elegance with aerodynamic efficiency. The updated exterior includes a refreshed front fascia, new wheel designs, and subtle tweaks that enhance its modern appeal.</p>
+
+                    <h3>Key Exterior Features</h3>
+                    <ul>
+                        <li>Full LED lighting with adaptive headlights</li>
+                        <li>Panoramic glass roof</li>
+                        <li>Flush door handles</li>
+                    </ul>
+
+                    <h2>Interior and Comfort</h2>
+                    <p>The interior of the Model S is a blend of luxury and futuristic minimalism. The spacious cabin provides ample room for passengers, and the minimalist dashboard centers around a large touchscreen interface. High-quality materials and attention to detail contribute to a premium feel.</p>
+
+                    <h3>Technology Highlights</h3>
+                    <ul>
+                        <li>17-inch central touchscreen with updated UI</li>
+                        <li>12.3-inch digital instrument cluster</li>
+                        <li>Yoke steering wheel (optional)</li>
+                        <li>Full Self-Driving capability (additional cost)</li>
+                    </ul>
+
+                    <h2>Performance and Range</h2>
+                    <p>The Model S offers several performance variants, with the top-of-the-line Plaid model delivering jaw-dropping acceleration. The dual or tri-motor setups provide instant torque and all-wheel-drive capability.</p>
+
+                    <h3>Performance Specifications</h3>
+                    <ul>
+                        <li><strong>Long Range:</strong> 0-60 mph in 3.1 seconds, top speed of 155 mph</li>
+                        <li><strong>Plaid:</strong> 0-60 mph in under 2 seconds, top speed of 200 mph</li>
+                    </ul>
+
+                    <p>The estimated range varies by model, with the Long Range offering up to 405 miles on a single charge, making it one of the longest-range electric vehicles available.</p>
+
+                    <blockquote>“The Model S Plaid is not just fast for an electric car; it's one of the fastest production cars ever made.” — Automotive Journalist</blockquote>
+
+                    <h2>Charging and Infrastructure</h2>
+                    <p>Tesla's Supercharger network provides fast and convenient charging options for Model S owners. The vehicle is compatible with V3 Superchargers, allowing for rapid charging speeds.</p>
+
+                    <h2>Autopilot and Safety</h2>
+                    <p>The Model S comes equipped with Tesla's Autopilot system, offering advanced driver-assistance features. Safety is a strong focus, with a 5-star safety rating and robust construction.</p>
+
+                    <h3>Safety Features</h3>
+                    <ul>
+                        <li>Automatic Emergency Braking</li>
+                        <li>Lane Departure Warning and Prevention</li>
+                        <li>Adaptive Cruise Control</li>
+                    </ul>
+
+                    <h2>Verdict</h2>
+                    <p>The Tesla Model S remains a benchmark in the electric vehicle market. Its combination of performance, range, and technology is unmatched, offering a compelling option for those seeking a premium electric sedan.</p>
+
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>Exceptional acceleration and performance</li>
+                        <li>Long electric range</li>
+                        <li>Advanced technology and over-the-air updates</li>
+                        <li>Extensive charging network</li>
+                    </ul>
+
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>High purchase price</li>
+                        <li>Minimalist interior may not appeal to everyone</li>
+                        <li>Availability of certain features may vary by region</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer" aria-labelledby="footer-heading">
+        <div class="container">
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <p>TorqueTrend is your trusted source for automotive news, reviews, and rankings. Stay updated with the latest trends and insights in the automotive industry.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="../index.html#home" aria-label="Go to Home">Home</a></li>
+                    <li><a href="../index.html#latest-news" aria-label="Go to Latest News">Latest News</a></li>
+                    <li><a href="../reviews.html" aria-label="Go to Reviews" class="active">Reviews</a></li>
+                    <li><a href="../index.html#rankings" aria-label="Go to Rankings">Rankings</a></li>
+                    <li><a href="../index.html#recommendations" aria-label="Go to Recommendations">Recommendations</a></li>
+                    <li><a href="../chatbot.html" aria-label="Go to Car Chatbot">Chatbot</a></li>
+                    <li><a href="../index.html#newsletter" aria-label="Go to Newsletter">Newsletter</a></li>
+                    <li><a href="../contact.html" aria-label="Go to Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TorqueTrend, LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('../sw.js')
+                    .then(reg => console.log('Service Worker registered'))
+                    .catch(err => console.error('Service Worker registration failed:', err));
+            });
+        }
+    </script>
+</body>
+
+</html>
