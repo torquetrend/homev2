@@ -1,1 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Vehicle Rankings - TorqueTrend</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html" aria-label="TorqueTrend Home">
+                    <h1>TorqueTrend</h1>
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu" aria-label="Primary Navigation">
+                <ul>
+                    <li><a href="index.html#home" aria-label="Home">Home</a></li>
+                    <li><a href="index.html#latest-news" aria-label="Latest News">Latest News</a></li>
+                    <li><a href="index.html#reviews" aria-label="Reviews">Reviews</a></li>
+                    <li><a href="rankings.html" aria-label="Rankings" class="active">Rankings</a></li>
+                    <li><a href="chatbot.html" aria-label="Car Chatbot">Chatbot</a></li>
+                    <li><a href="contact.html" aria-label="Contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Bar for Desktop -->
+            <div class="search-bar">
+                <form role="search" aria-label="Site Search">
+                    <input type="search" id="search-bar" name="search" placeholder="Search articles..." aria-label="Search">
+                    <button type="submit" aria-label="Search Button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <button class="hamburger-menu" id="hamburger-menu" aria-label="Open Menu" aria-expanded="false" aria-controls="sidebar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sidebar for Mobile -->
+    <aside id="sidebar" class="sidebar" aria-hidden="true">
+        <div class="sidebar-nav">
+            <ul>
+                <li><a href="index.html#home" aria-label="Home">Home</a></li>
+                <li><a href="index.html#latest-news" aria-label="Latest News">Latest News</a></li>
+                <li><a href="index.html#reviews" aria-label="Reviews">Reviews</a></li>
+                <li><a href="rankings.html" aria-label="Rankings" class="active">Rankings</a></li>
+                <li><a href="index.html#recommendations" aria-label="Recommendations">Recommendations</a></li>
+                <li><a href="chatbot.html" aria-label="Car Chatbot">Chatbot</a></li>
+                <li><a href="index.html#newsletter" aria-label="Newsletter">Newsletter</a></li>
+                <li><a href="contact.html" aria-label="Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-search">
+            <form role="search" aria-label="Mobile Search">
+                <input type="search" id="sidebar-search-bar" name="search" placeholder="Search articles..." aria-label="Search">
+                <button type="submit" aria-label="Search Button"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </aside>
+
+    <!-- Overlay for Sidebar -->
+    <div id="sidebar-overlay" tabindex="-1" aria-hidden="true"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Rankings Section -->
+        <section id="rankings" class="top-rankings-section" aria-labelledby="rankings-heading">
+            <div class="container">
+                <h2 id="rankings-heading">Top Vehicle Rankings</h2>
+
+                <!-- Rankings Content -->
+                <div class="ranking-categories">
+                    <div class="ranking-category">
+                        <h3>Best SUVs of 2024</h3>
+                        <div class="ranking-list">
+                            <ol>
+                                <li>
+                                    <div class="ranking-item">
+                                        <img src="assets/images/tesla-model-x.jpg" alt="Tesla Model X" loading="lazy">
+                                        <div class="ranking-details">
+                                            <h4>Tesla Model X</h4>
+                                            <p>The Tesla Model X offers unparalleled electric performance with advanced autonomous features.</p>
+                                            <a href="rankings/tesla-model-x.html" class="btn-secondary" aria-label="Read More about Tesla Model X">Read More <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ranking-item">
+                                        <img src="assets/images/alfa-romeo-stelvio.jpg" alt="Alfa Romeo Stelvio" loading="lazy">
+                                        <div class="ranking-details">
+                                            <h4>Alfa Romeo Stelvio</h4>
+                                            <p>A blend of Italian styling and performance, the Stelvio stands out in the luxury SUV market.</p>
+                                            <a href="rankings/alfa-romeo-stelvio.html" class="btn-secondary" aria-label="Read More about Alfa Romeo Stelvio">Read More <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Add more SUV rankings as needed -->
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="ranking-category">
+                        <h3>Best Sedans of 2024</h3>
+                        <div class="ranking-list">
+                            <ol>
+                                <li>
+                                    <div class="ranking-item">
+                                        <img src="assets/images/alfa-romeo-giulia.jpg" alt="Alfa Romeo Giulia" loading="lazy">
+                                        <div class="ranking-details">
+                                            <h4>Alfa Romeo Giulia</h4>
+                                            <p>A perfect blend of Italian design and performance, the Giulia stands out in the sedan market.</p>
+                                            <a href="rankings/alfa-romeo-giulia.html" class="btn-secondary" aria-label="Read More about Alfa Romeo Giulia">Read More <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ranking-item">
+                                        <img src="assets/images/tesla-model-3.jpg" alt="Tesla Model 3" loading="lazy">
+                                        <div class="ranking-details">
+                                            <h4>Tesla Model 3</h4>
+                                            <p>The Model 3 delivers impressive electric range and performance at an accessible price point.</p>
+                                            <a href="rankings/tesla-model-3.html" class="btn-secondary" aria-label="Read More about Tesla Model 3">Read More <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Add more sedan rankings as needed -->
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="ranking-category">
+                        <h3>Top Sports Cars</h3>
+                        <div class="ranking-list">
+                            <ol>
+                                <li>
+                                    <div class="ranking-item">
+                                        <img src="assets/images/porsche-911-gt3rs.jpg" alt="Porsche 911 GT3RS" loading="lazy">
+                                        <div class="ranking-details">
+                                            <h4>Porsche 911 GT3RS</h4>
+                                            <p>The GT3RS is a track-focused beast that delivers exhilarating performance and handling.</p>
+                                            <a href="rankings/porsche-911-gt3rs.html" class="btn-secondary" aria-label="Read More about Porsche 911 GT3RS">Read More <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ranking-item">
+                                        <img src="assets/images/chevrolet-corvette-z06.jpg" alt="Chevrolet Corvette Z06 (C8)" loading="lazy">
+                                        <div class="ranking-details">
+                                            <h4>Chevrolet Corvette Z06 (C8)</h4>
+                                            <p>The latest Corvette Z06 offers supercar performance with a mid-engine layout.</p>
+                                            <a href="rankings/chevrolet-corvette-z06.html" class="btn-secondary" aria-label="Read More about Chevrolet Corvette Z06">Read More <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Add more sports car rankings as needed -->
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer" aria-labelledby="footer-heading">
+        <div class="container">
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <p>TorqueTrend is your trusted source for automotive news, reviews, and rankings. Stay updated with the latest trends and insights in the automotive industry.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html#home" aria-label="Go to Home">Home</a></li>
+                    <li><a href="index.html#latest-news" aria-label="Go to Latest News">Latest News</a></li>
+                    <li><a href="index.html#reviews" aria-label="Go to Reviews">Reviews</a></li>
+                    <li><a href="rankings.html" aria-label="Go to Rankings" class="active">Rankings</a></li>
+                    <li><a href="index.html#recommendations" aria-label="Go to Recommendations">Recommendations</a></li>
+                    <li><a href="chatbot.html" aria-label="Go to Car Chatbot">Chatbot</a></li>
+                    <li><a href="index.html#newsletter" aria-label="Go to Newsletter">Newsletter</a></li>
+                    <li><a href="contact.html" aria-label="Go to Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TorqueTrend, LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('Service Worker registered'))
+                    .catch(err => console.error('Service Worker registration failed:', err));
+            });
+        }
+    </script>
+</body>
+
+</html>
